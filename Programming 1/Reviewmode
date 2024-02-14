@@ -1,0 +1,55 @@
+#include<stdio.h>
+
+int main(){
+
+    int lab1 = 0, lab2 = 0, lab3 = 0;
+    int mid = 0, final = 0;
+    int totalle = 0;
+    float percentle = 0, percentmid = 0, percentfinal = 0;
+    int grade = 0;
+
+    printf("Laboratory Exercise #1: ");
+    scanf("%d", &lab1);
+    printf("Laboratory Exercise #2: ");
+    scanf("%d", &lab2);
+    printf("Laboratory Exercise #3: ");
+    scanf("%d", &lab3);
+    printf("Midterm Exam: ");
+    scanf("%d", &mid);
+    printf("Final Exam: ");
+    scanf("%d", &final);
+
+    printf("\nCourse: \tProgramming 1");
+    printf("\nExercises:");
+    printf("\n\tLab Exercise 1: %-25%d/50", lab1);
+    printf("\n\tLab Exercise 2: %-25%d/50", lab2);
+    printf("\n\tLab Exercise 3: %-25%d/50", lab3);
+    printf("\nExams:");
+    printf("\n\tMidterm Exam: \t\t%d/100", mid);
+    printf("\n\tFinal Exam: \t\t%d/100", final);
+
+    totalle = lab1 + lab2 + lab3;
+    percentle = (float)totalle / 150 * 30.0;
+    percentmid = (float)mid / 100 * 30.0;
+    percentfinal = (float)final / 100 * 40.0;
+    grade = percentle + percentmid + percentfinal;
+
+    printf("\n");
+    printf("\nFinal Grade: \t\t\t %d%%", grade);
+    if(grade>=75){
+        printf("\nStatus: \t\t\tPassed");
+    }
+    else{
+
+        printf("\nStatus: \t\t\tFailed");
+    }
+
+
+
+
+
+
+
+
+    return 0;
+}
