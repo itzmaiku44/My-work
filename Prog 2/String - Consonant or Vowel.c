@@ -11,7 +11,7 @@ int main(){
 
     int length = strlen(s);
     for(int i=0; i < length; i++){
-        if(!isspace(s[i])){
+        if(!isspace(s[i])){  // ignore space if its a sentence or more words
             int isvowel = 0;
         
             for(int j=0; j < 5; j++){
