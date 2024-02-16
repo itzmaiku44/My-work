@@ -31,3 +31,16 @@ int main(){
     }
     return 0;
 }
+
+/*  Output:
+
+Enter string: Yawaa uy
+Y - Consonant
+a - Vowel
+w - Consonant
+a - Vowel
+a - Vowel
+u - Vowel
+y - Consonant
+
+*/
